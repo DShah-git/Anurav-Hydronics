@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    --red : #FF1717;
+    --dark-blue : #2F4858;
+    --nuetral-grey : #787878;
+    --padding:0rem 5rem;
+    --padding-2:4rem 5rem;
+}
+
+
+html,body{
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width:80%;
+    margin: 2rem auto;
+    margin-bottom:4rem;
+}
+
+.p-h1{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+.pro-container{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    margin:1rem auto;
+    gap:3rem; 
+}
+
+
+
+.pro-container>div{
+    width: 40%;
+}
+
+.blue{
+    color: var(--dark-blue);
+}
+
+.information>h4{
+    color: var(--dark-blue);
+}
+
+
+.pointers{
+    margin-top: 1rem;
+}
+
+.pointers>p{
+    max-width: 80%;
+}
+
+
+.image-section{
+    min-width: 40vw;
+}
+
+.images{
+    width: 450px;
+    height: 320px;
+    overflow-x: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.images>img{
+    width: 450px;
+    height: 300px;
+    flex-shrink: 0;
+    object-fit: contain;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    max-width: 400px;
+    padding:0rem 1.5rem
+}
+
+
+
+button{
+    background-color: rgb(222, 222, 222);
+    height: 40px;
+    width: 40px;
+    border: 0;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight:600;
+    transform: translateY(-190px);
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+button:hover{
+    filter: brightness(.8);
+}
+
+button>img{
+    width: 70%;
+    height: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .pro-container{
+        flex-direction: column;
+    }
+
+    .pro-container>div{
+        width: 90%;
+    }
+   
+    .header{
+        text-align: left;
+    }
+    
+    .p-h1, .p-info{
+        text-align: left;
+
+    }
+    
+
+}
+
+@media only screen and (max-width: 600px){
+    
+    .pro-container{
+        gap:1rem;
+        padding:1rem 2rem;
+    }
+
+    .images{
+        width: 300px;
+        height: 170px;
+    }
+    
+    .images>img{
+        width: 300px;
+        height: 170px;
+    }
+    
+    .buttons{
+        max-width: 250px;
+        transform: translateY(80px);
+    }
+}
