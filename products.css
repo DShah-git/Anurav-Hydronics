@@ -53,18 +53,16 @@ h1,h2,h3,h4,h5,h6{
     color: var(--dark-blue);
 }
 
-.information>h4{
+.information h2{
     color: var(--dark-blue);
 }
 
 
 .pointers{
     margin-top: 1rem;
+    width: 80%;
 }
 
-.pointers>p{
-    max-width: 80%;
-}
 
 
 .image-section{
@@ -154,6 +152,11 @@ button>img{
         padding:1rem 2rem;
     }
 
+    
+    .pointers{
+        width: 100% !important;
+    }
+
     .images{
         width: 300px;
         height: 170px;
@@ -168,4 +171,5 @@ button>img{
         max-width: 250px;
         transform: translateY(80px);
     }
+
 }
