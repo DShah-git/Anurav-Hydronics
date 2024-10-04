@@ -60,13 +60,13 @@ function next3(){
 const imageContainer4 = document.getElementById("images4");
 let currentP4 = 1;
 function back4(){
-    if(currentP4<=1) { currentP4=2 }
+    if(currentP4<=1) { currentP4=3 }
     else {currentP4-=1;}
     imageContainer4.scrollLeft = ((currentP4-1)*width).toString();
 }
 
 function next4(){
-    if(currentP4>=2) { currentP4=1 }
+    if(currentP4>=3) { currentP4=1 }
     else {currentP4+=1;}
     imageContainer4.scrollLeft = ((currentP4-1)*width).toString();
 }
